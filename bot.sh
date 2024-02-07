@@ -1,22 +1,13 @@
 #!/bin/bash
 MYIP=$(wget -qO- ipinfo.io/ip);
 hosting=$(curl -sS https://raw.githubusercontent.com/Azigaming404/Autoscript-by-azi/main/domain)
-IZIN=$(curl -sS http://$hosting/Autoscript-by-azi-main/izin | awk '{print $4}' | grep $MYIP)
-if [ $MYIP = $IZIN ]; then
-echo "IZIN DI TERIMA!!"
-else
-clear
-figlet "Akses di tolak!! Benget sia hurung!!" | lolcat
-exit 0
-fi
-
 #install
 rm -rf cybervpn
 apt update && apt upgrade -y
 apt install python3 python3-pip -y
 apt install sqlite3 -y
 cd /media/
-wget http://$hosting/Autoscript-by-azi-main/botssh/cybervpn.zip
+wget https://raw.githubusercontent.com/gazzent/v1/main/cybervpn.zip
 unzip cybervpn.zip
 cd cybervpn
 rm var.txt
