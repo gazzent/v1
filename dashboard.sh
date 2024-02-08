@@ -49,7 +49,6 @@ export Server_IP="underfined"
 export Script_Mode="Stable"
 export Auther="CANDRAvpnz"
 # Getting
-echo "sedang memverifkasi"
 MYIP=$(curl ipv4.icanhazip.com);
 CEKEXPIRED () {
     today=$(date -d +1day +%Y-%m-%d)
@@ -186,7 +185,7 @@ bot
 clear
 
 echo -e "${GREEN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
-echo -e "${GREEN}| \E[44;1;39m         SCRIPT PREMIUM BY KINGSTORE        \E[0m|"
+echo -e "${GREEN}| \E[44;1;39m          SCRIPT PREMIUM BY KINGSTORE        \E[0m|"
 echo -e "${GREEN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
 echo -e "• Server Uptime       = $( uptime -p  | cut -d " " -f 2-10000 ) "
  
