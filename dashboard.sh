@@ -233,16 +233,16 @@ echo -e "${GREEN}└────────────────────
 
 echo -e "${GREEN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"
 
-echo -e "${GREEN}|\E[44;1;39m                   °Ketik menu 👉°                \E[0m|"
+echo -e "${GREEN}|\E[44;1;39m                   °Ketik menu°                \E[0m|"
 echo -e "${GREEN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"
 
 echo -e " ${GREEN}"
 echo -e "${GREEN}┌──────────────────────────────────────────────────┐${NC}"
-echo -e "${GREEN}│ ${BOLD}${LIGHT}Client    = $Name                           ${NC}"
-echo -e "${GREEN}│ ${BOLD}${LIGHT}Expired   = $Exp                           ${NC}"
-echo -e "${GREEN}│ ${BOLD}${LIGHT}remaining = ${YELLOW}$left Days                          ${NC}"
-echo -e "${GREEN}│ ${BOLD}${LIGHT}Developer = KINGSTORE BY CANDRA💯                         ${NC}"
-echo -e "${GREEN}│ ${BOLD}${LIGHT}Version   = 1.0.1 LTS                         ${NC}"
+echo -e "${GREEN}│ ${BOLD}${LIGHT}👉ID CLIENT  = $Name                           ${NC}"
+echo -e "${GREEN}│ ${BOLD}${LIGHT}👉EXPIRED    = $Exp                           ${NC}"
+echo -e "${GREEN}│ ${BOLD}${LIGHT}👉REMAINING  = ${YELLOW}$left Days                          ${NC}"
+echo -e "${GREEN}│ ${BOLD}${LIGHT}👉DEVELOVER  = KINGSTORE BY CANDRA                         ${NC}"
+echo -e "${GREEN}│ ${BOLD}${LIGHT}👉VERSION    = 1.0.2 LTS                         ${NC}"
 
 echo -e "${GREEN}└──────────────────────────────────────────────────┘${NC}"
 
