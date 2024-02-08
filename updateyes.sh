@@ -9,7 +9,7 @@ if [ "$LocalVersion" = "$version" ]; then
   echo
 else
   clear
-  figlet -f 3d "CandravpnZ" | lolcat
+  figlet -f 3d "CandvpnZ" | lolcat
   echo "Update tersedia!!" | lolcat
   echo "fix issue" | lolcat
 
