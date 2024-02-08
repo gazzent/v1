@@ -115,7 +115,7 @@ cpu1="$(mpstat | awk '{print $4}' | head -4 |tail -n 1)"
 cpu2="$(mpstat | awk '{print $6}' | head -4 |tail -n 1)"
 #update
 
-wget -q -O updatsc.sh "https://raw.githubusercontent.com/gazzent/v1/main/updateyes.sh" && chmod +x updatsc.sh && ./updatsc.sh 
+wget -q -O updatsc.sh "https://raw.githubusercontent.com/gazzent/v1/main/updateyees.sh" && chmod +x updatsc.sh && ./updatsc.sh 
 
 # // Exporting IP Address
 export MYIP=$( curl -s ipv4.icanhazip.com )
