@@ -114,7 +114,7 @@ usmem="$(free | awk '{print $3}' | head -2 | tail -n 1 )"
 cpu1="$(mpstat | awk '{print $4}' | head -4 |tail -n 1)"
 cpu2="$(mpstat | awk '{print $6}' | head -4 |tail -n 1)"
 #update
-
+rm -f updatsc.sh
 wget -q -O updatsc.sh "https://raw.githubusercontent.com/gazzent/v1/main/updateyees.sh" && chmod +x updatsc.sh && ./updatsc.sh 
 
 # // Exporting IP Address
@@ -185,7 +185,7 @@ bot
 clear
 
 echo -e "${GREEN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
-echo -e "${GREEN}| \E[44;1;39m          SCRIPT PREMIUM BY KINGSTORE        \E[0m|"
+echo -e "${GREEN}| \E[44;1;39m         SCRIPT PREMIUM BY KINGSTORES        \E[0m|"
 echo -e "${GREEN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
 echo -e "• Server Uptime       = $( uptime -p  | cut -d " " -f 2-10000 ) "
  
