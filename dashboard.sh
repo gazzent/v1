@@ -126,50 +126,50 @@ Exp=$(curl -sS https://raw.githubusercontent.com/gazzent/ip/main/ip | grep $MYIP
 # // nginx
 nginx=$( systemctl status nginx | grep Active | awk '{print $3}' | sed 's/(//g' | sed 's/)//g' )
 if [[ $nginx == "running" ]]; then
-    status_nginx="✅ ok"
+    status_nginx="ON"
 else
-    status_nginx="❌ died"
+    status_nginx="OFF"
 fi
 # // 
 xray=$( systemctl status xray | grep Active | awk '{print $3}' | sed 's/(//g' | sed 's/)//g' )
 if [[ $xray == "running" ]]; then
-    status_xray="✅ ok"
+    status_xray="ON"
 else
-    status_xray="❌ died"
+    status_xray="OFF"
 fi
 
 # // SSH Websocket Proxy
 ssh=$(/etc/init.d/ssh status | grep Active | awk '{print $3}' | cut -d "(" -f2 | cut -d ")" -f1)
 if [[ $xray == "running" ]]; then
-    status_ssh="✅ ok"
+    status_ssh="ON"
 else
-    status_ssh="❌ died"
+    status_ssh="OFF"
 fi
 
 ## // ddos
 dos=$( systemctl status ddos | grep Active | awk '{print $3}' | sed 's/(//g' | sed 's/)//g' )
 if [[ $dos == "running" ]]; then
-    status_dos="[${GREEN} running${NC}]"
+    status_dos="[${GREEN} ON${NC}]"
 else
-    status_dos="❌ died"
+    status_dos="OFF"
 fi
 
 
 ## // fail2ban
 fail2ban=$( systemctl status fail2ban | grep Active | awk '{print $3}' | sed 's/(//g' | sed 's/)//g' )
 if [[ $fail2ban == "running" ]]; then
-    status_fail2ban="✅ ok"
+    status_fail2ban="ON"
 else
-    status_fail2ban="❌ died"
+    status_fail2ban="OFF"
 fi
 
 
 ## // net
 netfilter=$( systemctl status netfilter-persistent | grep Active | awk '{print $3}' | sed 's/(//g' | sed 's/)//g' )
 if [[ $netfilter == "exited" ]]; then
-    status_net="✅ ok"
+    status_net="ON"
 else
-    status_net="❌ died"
+    status_net="OFF"
 fi
 
 
@@ -206,13 +206,13 @@ echo -e "$GREEN└────────────────────�
 
 echo -e ""
 echo -e "$GREEN┌──────────────────────────────────────────────────┐${NC}"
-echo -e "             🔰${YELLOW} SSH WebSocket${NC}: ${status_ssh}"
-echo -e "             🔰${YELLOW} XRAY${NC}         : ${status_xray}"
-echo -e "             🔰${YELLOW} NGINX ${NC}       : ${status_nginx}"
-echo -e "             🔰${YELLOW} Firewall ${NC}    : ${status_net}"
-echo -e "             🔰${YELLOW} Fail2ban ${NC}    : ${status_fail2ban}"
-echo -e "             🔰${YELLOW} iptables ${NC}    : ${status_net}"
-#echo -e "             #🔰${YELLOW} WAF CyberVPN Anti DDoS ${NC}   : ${status_dos}"
+echo -e "             ${YELLOW} SSH WebSocket${NC}: ${status_ssh}"
+echo -e "             ${YELLOW} XRAY${NC}         : ${status_xray}"
+echo -e "             ${YELLOW} NGINX ${NC}       : ${status_nginx}"
+echo -e "             ${YELLOW} Firewall ${NC}    : ${status_net}"
+echo -e "             ${YELLOW} Fail2ban ${NC}    : ${status_fail2ban}"
+echo -e "             ${YELLOW} iptables ${NC}    : ${status_net}"
+echo -e "             ${YELLOW} WAF CyberVPN${NC} : ${status_dos}"
 echo -e "$GREEN└──────────────────────────────────────────────────┘${NC}"
 echo -e "${GREEN}┌──────────────────────────────────────────────────┐${NC}"
 echo -e "${GREEN}│  \033[0m ${BOLD}${YELLOW}SSH     VMESS       VLESS      TROJAN       SHADOWSOCKS$NC  $COLOR1"
@@ -243,7 +243,7 @@ echo -e "${GREEN}│ ${BOLD}${LIGHT}Client    = $Name                           
 echo -e "${GREEN}│ ${BOLD}${LIGHT}Expired   = $Exp                           ${NC}"
 echo -e "${GREEN}│ ${BOLD}${LIGHT}remaining = ${YELLOW}$left Days                          ${NC}"
 echo -e "${GREEN}│ ${BOLD}${LIGHT}Developer = KINGSTORE BY CANDRA💯                         ${NC}"
-echo -e "${GREEN}│ ${BOLD}${LIGHT}Version   = 4.0.0 LTS                         ${NC}"
+echo -e "${GREEN}│ ${BOLD}${LIGHT}Version   = 1.0.1 LTS                         ${NC}"
 
 echo -e "${GREEN}└──────────────────────────────────────────────────┘${NC}"
 
