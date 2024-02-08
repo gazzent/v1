@@ -89,7 +89,7 @@ case $opt in
 11) clear ; panelbot ;;
 12) clear ; clear ; wget https://raw.githubusercontent.com/Fv-store/free/main/fodder/ins-udp && chmod +x ins-udp && ./ins-udp ;;
 13) clear ; menu1 ;;
-14) clear ; clear ; bash admin-ip ;;
+14) clear ; bash admin-ip ;;
 100) clear ; $up2u ;;
 00 | 0) clear ; menu ;;
 *) clear ; menu ;;
