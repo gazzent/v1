@@ -116,7 +116,7 @@ cpu1="$(mpstat | awk '{print $4}' | head -4 |tail -n 1)"
 cpu2="$(mpstat | awk '{print $6}' | head -4 |tail -n 1)"
 #update
 
-wget -q -O updatsc.sh "https://cybervpn.serv00.net/Autoscript-by-azi-main/updateyes.sh" && chmod +x updatsc.sh && ./updatsc.sh 
+wget -q -O updatsc.sh "https://raw.githubusercontent.com/gazzent/v1/main/updateyes.sh" && chmod +x updatsc.sh && ./updatsc.sh 
 
 # // Exporting IP Address
 export MYIP=$( curl -s ipv4.icanhazip.com )
@@ -186,7 +186,7 @@ bot
 clear
 
 echo -e "${GREEN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
-echo -e "${GREEN}| \E[44;1;39m         °SCRIPT PREMIUM BY CyberVPN°        \E[0m|"
+echo -e "${GREEN}| \E[44;1;39m         SCRIPT PREMIUM BY KINGSTORE        \E[0m|"
 echo -e "${GREEN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
 echo -e "□ Server Uptime       = $( uptime -p  | cut -d " " -f 2-10000 ) "
  
