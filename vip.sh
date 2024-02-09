@@ -215,7 +215,7 @@ if [ -n "$SSH_CLIENT" ] && [ -z "$TMUX" ]; then
         COUNTRY=$(cat $TMPFILE | sed -n 's/^  "country":[[:space:]]*//p' | sed 's/"//g')
         ORG=$(cat $TMPFILE | sed -n 's/^  "org":[[:space:]]*//p' | sed 's/"//g')
 	TEXT="
-==============================
+```==============================
 🔰Informasi instalasi script🔰
 ==============================
 🔰Tanggal: $DATE_EXEC
@@ -227,7 +227,8 @@ if [ -n "$SSH_CLIENT" ] && [ -z "$TMUX" ]; then
 ✅ISP       : $ORG
 ✅KOTA      : $CITY
 ✅PROVINSI  : $REGION
-✅PORT SSH. : $PORT"
+✅PORT SSH. : $PORT
+``` "
 	curl -s --max-time $TIMEOUT -d "chat_id=$USERID&disable_web_page_preview=1&text=$TEXT" $URL > /dev/null
 	rm $TMPFILE
 fi
