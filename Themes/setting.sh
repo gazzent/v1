@@ -80,6 +80,7 @@ echo "[14].bot menu"
 echo "[15].Menu Backup"
 echo "[16].About"
 echo "[17].Add proxy cloudfront"
+echo "[18].Admin Direct"
 echo -e "${CYAN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
 read -p    "Pilih Nomor :" bro
 
@@ -102,6 +103,7 @@ case $bro in
 15) clear ; menu-backup ;;
 16) clear ; infosc ;; 
 17) clear ; cftn ;;
+18) clear ; add ;;
 100) clear ; $up2u ;;
 00 | 0) clear ; menu ;;
 *) clear ; menu ;;
