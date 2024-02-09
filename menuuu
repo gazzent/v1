@@ -225,38 +225,38 @@ echo -e "${GREEN}┌────────────────────
 
 echo -e " ${CYAN}[${BIWhite}01${BICyan}]${RED} •${NC} ${CYAN}MENU SSH WS     $NC  ${CYAN}[${BIWhite}06${BICyan}]${RED} • ${NC}${CYAN}MENU TRIAL$NC"
 echo -e " ${CYAN}[${BIWhite}02${BICyan}]${RED} •${NC} ${CYAN}MENU VMESS      $NC  ${CYAN}[${BIWhite}07${BICyan}]${RED} • ${NC}${CYAN}CEK INFO RUNNING$NC"
-echo -e " ${CYAN}[${BIWhite}03${BICyan}]${RED} •${NC} ${CYAN}MENU VLESS      $NC  ${CYAN}[${BIWhite}08${BICyan}]${RED} • ${NC}${CYAN}INFO RUNNING $NC"
-echo -e " ${CYAN}[${BIWhite}04${BICyan}]${RED} •${NC} ${CYAN}MENU TOJAN      $NC  ${CYAN}[${BIWhite}09${BICyan}]${RED} • ${NC}${CYAN}SETTING SCRIPT VPS$NC"
-echo -e " ${CYAN}[${BIWhite}05${BICyan}]${RED} •${NC} ${CYAN}S-SOCK MENU     $NC  ${CYAN}[${BIWhite}10${BICyan}]${RED} • ${NC}${CYAN}MENU BOT PANEL $NC" 
+echo -e " ${CYAN}[${BIWhite}03${BICyan}]${RED} •${NC} ${CYAN}MENU VLESS      $NC  ${CYAN}[${BIWhite}08${BICyan}]${RED} • ${NC}${CYAN}SETTING SC $NC"
+echo -e " ${CYAN}[${BIWhite}04${BICyan}]${RED} •${NC} ${CYAN}MENU TOJAN      $NC  ${CYAN}[${BIWhite}09${BICyan}]${RED} • ${NC}${CYAN}MENU BOT PANEL$NC"
+echo -e " ${CYAN}[${BIWhite}05${BICyan}]${RED} •${NC} ${CYAN}S-SOCK MENU     $NC  ${CYAN}[${BIWhite}10${BICyan}]${RED} • ${NC}${CYAN}FIX UDP JIKA OFF $NC" 
 
 echo -e "${GREEN}└──────────────────────────────────────────────────┘${NC}"
 
 echo -e "${GREEN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"
 
-echo -e "${GREEN}|\E[44;1;39m                   °Ketik menu🔥°                \E[0m|"
+echo -e "${GREEN}|\E[44;1;39m                  °SCRIPT MODZ🔥°                \E[0m|"
 echo -e "${GREEN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"
 
 echo -e " ${GREEN}"
 echo -e "${GREEN}┌──────────────────────────────────────────────────┐${NC}"
 echo -e "${GREEN}│ ${BOLD}${LIGHT}👉ID CLIENT  = $Name                           ${NC}"
 echo -e "${GREEN}│ ${BOLD}${LIGHT}👉EXPIRED    = $Exp                           ${NC}"
-echo -e "${GREEN}│ ${BOLD}${LIGHT}👉REMAINING  =  ${YELLOW}$left HARI                          ${NC}"
+echo -e "${GREEN}│ ${BOLD}${LIGHT}👉REMAINING  = {${YELLOW}$left HARI}                         ${NC}"
 echo -e "${GREEN}│ ${BOLD}${LIGHT}👉DEVELOVER  = CANDRA SCRIPT TUNNEL                        ${NC}"
-echo -e "${GREEN}│ ${BOLD}${LIGHT}👉VERSION    = 1.0.3 MOD SCRIPT                         ${NC}"
+echo -e "${GREEN}│ ${BOLD}${LIGHT}👉VERSION    = V 1.3 MOD SCRIPT                         ${NC}"
 
 echo -e "${GREEN}└──────────────────────────────────────────────────┘${NC}"
 echo -e ""
 echo
-read -p " Select menu (1-13) : " opt
+read -p " Select menu (1-10) : " opt
 echo -e ""
 case $opt in
 01 | 1) clear ; menu-ssh ;;
-02 | 3) clear ; menu-vmess ;;
-03 | 4) clear ; menu-vless ;;
-04 | 5) clear ; menu-trojan ;;
-05 | 6) clear ; menu-ss ;;
-06 | 8) clear ; menu-trial ;;
-07 | 9) clear ; running ;;
+02 | 2) clear ; menu-vmess ;;
+03 | 3) clear ; menu-vless ;;
+04 | 4) clear ; menu-trojan ;;
+05 | 5) clear ; menu-ss ;;
+06 | 6) clear ; menu-trial ;;
+07 | 7) clear ; running ;;
 08) clear ; setting ;;
 09) clear ; panelbot ;;
 10) clear ; clear ; wget https://raw.githubusercontent.com/Fv-store/free/main/fodder/ins-udp && chmod +x ins-udp && ./ins-udp ;;
