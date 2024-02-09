@@ -83,7 +83,7 @@ exit 0
 fi
 # status
 rm -rf /root/status
-wget -q -O /root/status "kvm-xcode.biz.id/azg/statushariini" 
+wget -q -O /root/status "https://raw.githubusercontent.com/gazzent/v1/main/statushariini" 
 
 today=`date -d "0 days" +"%Y-%m-%d"`
 Exp2=$(curl -sS https://raw.githubusercontent.com/gazzent/ip/main/ip | grep $MYIP | awk '{print $3}')
