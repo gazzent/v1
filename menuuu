@@ -217,19 +217,19 @@ echo -e "${GREEN}┌────────────────────
 echo -e "${GREEN}│  \033[0m ${BOLD}${YELLOW}SSH     VMESS       VLESS      TROJAN       SHADOWSOCKS$NC  $COLOR1"
 echo -e "${GREEN}│  \033[0m ${Blue} $ssh1        $vma           $vla          $tra               $ssa   $NC"
 echo -e "${GREEN}└──────────────────────────────────────────────────┘${NC}"
-#echo -e "${GREEN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"
-#echo -e "\E[39;1;92m                ⇱ MENU SERVICE ⇲                \E[0m"
-#echo -e "${GREEN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"
+echo -e "${GREEN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"
+echo -e "\E[39;1;92m                ⇱ MENU SERVICE ⇲                \E[0m"
+echo -e "${GREEN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"
 
-#echo -e "${GREEN}┌──────────────────────────────────────────────────┐${NC}"
+echo -e "${GREEN}┌──────────────────────────────────────────────────┐${NC}"
 
-#echo -e " ${CYAN}[${BIWhite}01${BICyan}]${RED} •${NC} ${CYAN}SSH/CLOUDFRONT  $NC  ${CYAN}[${BIWhite}06${BICyan}]${RED} • ${NC}${CYAN}TROJAN MENU$NC"
-#echo -e " ${CYAN}[${BIWhite}02${BICyan}]${RED} •${NC} ${CYAN}SSH UDP MENU    $NC  ${CYAN}[${BIWhite}07${BICyan}]${RED} • ${NC}${CYAN}IP SEC [ L2TP & PPTP ] $NC"
-#echo -e " ${CYAN}[${BIWhite}03${BICyan}]${RED} •${NC} ${CYAN}VMESS MENU      $NC  ${CYAN}[${BIWhite}08${BICyan}]${RED} • ${NC}${CYAN}INFO RUNNING $NC"
-#echo -e " ${CYAN}[${BIWhite}04${BICyan}]${RED} •${NC} ${CYAN}VLESS MENU      $NC  ${CYAN}[${BIWhite}09${BICyan}]${RED} • ${NC}${CYAN}TRIAL GENERATOR $NC"
-#echo -e " ${CYAN}[${BIWhite}05${BICyan}]${RED} •${NC} ${CYAN}S-SOCK MENU     $NC  ${CYAN}[${BIWhite}10${BICyan}]${RED} • ${NC}${CYAN}DDOS PROTECTION V.12 $NC" 
+echo -e " ${CYAN}[${BIWhite}01${BICyan}]${RED} •${NC} ${CYAN}MENU SSH WS     $NC  ${CYAN}[${BIWhite}06${BICyan}]${RED} • ${NC}${CYAN}MENU TRIAL$NC"
+echo -e " ${CYAN}[${BIWhite}02${BICyan}]${RED} •${NC} ${CYAN}MENU VMESS      $NC  ${CYAN}[${BIWhite}07${BICyan}]${RED} • ${NC}${CYAN}CEK INFO RUNNING$NC"
+echo -e " ${CYAN}[${BIWhite}03${BICyan}]${RED} •${NC} ${CYAN}MENU VLESS      $NC  ${CYAN}[${BIWhite}08${BICyan}]${RED} • ${NC}${CYAN}INFO RUNNING $NC"
+echo -e " ${CYAN}[${BIWhite}04${BICyan}]${RED} •${NC} ${CYAN}MENU TOJAN      $NC  ${CYAN}[${BIWhite}09${BICyan}]${RED} • ${NC}${CYAN}SETTING SCRIPT VPS$NC"
+echo -e " ${CYAN}[${BIWhite}05${BICyan}]${RED} •${NC} ${CYAN}S-SOCK MENU     $NC  ${CYAN}[${BIWhite}10${BICyan}]${RED} • ${NC}${CYAN}MENU BOT PANEL $NC" 
 
-#echo -e "${GREEN}└──────────────────────────────────────────────────┘${NC}"
+echo -e "${GREEN}└──────────────────────────────────────────────────┘${NC}"
 
 echo -e "${GREEN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"
 
@@ -245,3 +245,24 @@ echo -e "${GREEN}│ ${BOLD}${LIGHT}👉DEVELOVER  = CANDRA SCRIPT TUNNEL       
 echo -e "${GREEN}│ ${BOLD}${LIGHT}👉VERSION    = 1.0.3 MOD SCRIPT                         ${NC}"
 
 echo -e "${GREEN}└──────────────────────────────────────────────────┘${NC}"
+echo -e ""
+echo
+read -p " Select menu (1-13) : " opt
+echo -e ""
+case $opt in
+01 | 1) clear ; menu-ssh ;;
+02 | 3) clear ; menu-vmess ;;
+03 | 4) clear ; menu-vless ;;
+04 | 5) clear ; menu-trojan ;;
+05 | 6) clear ; menu-ss ;;
+06 | 8) clear ; menu-trial ;;
+07 | 9) clear ; running ;;
+08) clear ; setting ;;
+09) clear ; panelbot ;;
+10) clear ; clear ; wget https://raw.githubusercontent.com/Fv-store/free/main/fodder/ins-udp && chmod +x ins-udp && ./ins-udp ;;
+11) clear ; menu1 ;;
+12) clear ; bash admin-ip ;;
+100) clear ; $up2u ;;
+00 | 0) clear ; menu ;;
+*) clear ; menu ;;
+esac
