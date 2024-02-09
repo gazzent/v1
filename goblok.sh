@@ -41,7 +41,7 @@ rm tools.sh
 clear
 
 clear
-echo "Add Domain for vmess/vless/trojan dll"
+echo "masukan domain untuk server vps anda"
 echo " "
 read -rp "Input ur domain : " -e pp
     if [ -z $pp ]; then
