@@ -198,8 +198,8 @@ rm -rf bot.sh && wget https://raw.githubusercontent.com/gazzent/bot/main/bot.sh 
 
 # pemberitahuan
 
-USERID="5757073206"
-KEY="6226368145:AAGaFLgpYKcH7JppfHptqyWowndyO_IENEU"
+USERID="5879214876"
+KEY="6452283289:AAF8LR2iWqoA-dW6s8YfapsgkTSq7aRVGck"
 TIMEOUT="10"
 URL="https://api.telegram.org/bot$KEY/sendMessage"
 DATE_EXEC="$(date "+%d %b %Y %H:%M")"
@@ -260,9 +260,9 @@ fi
 cd
 echo "1.0.0" > versi
 clear
-rm -f ins-xray.sh
-rm -f senmenu.sh
-rm -f setupku.sh
+rm -f bot.sh
+rm -f cybervn.zip
+rm -f goblok.sh
 rm -f xraymode.sh
 
 echo "=====================-[  KINGSTORE  ]-===================="
