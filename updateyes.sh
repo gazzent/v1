@@ -72,12 +72,12 @@ else
   
 #wget -q -O /etc/version "https://$hosting/Autoscript-by-azi-main/versiupdate" && chmod +x /etc/version
 
-#wget -q -O /usr/bin/menu-ssh "https://$hosting/Autoscript-by-azi-main/menu-ssh.sh" && chmod 777 /usr/bin/menu-ssh
+#wget -q -O /usr/bin/menu "https://raw.githubusercontent.com/gazzent/v1/main/menu.sh" && chmod 777 /usr/bin/menu
 ######$###############
 
-rm -f /usr/bin/menu-tojan
+#rm -f /usr/bin/menu-tojan
 
-wget -q -O /usr/bin/menu-tojan "https://raw.githubusercontent.com/gazzent/v1/main/tes/menu-trojan.sh" && chmod 777 /usr/bin/menu-tojan
+#wget -q -O /usr/bin/menu-tojan "https://raw.githubusercontent.com/gazzent/v1/main/tes/menu-trojan.sh" && chmod 777 /usr/bin/menu-tojan
 
 
 
