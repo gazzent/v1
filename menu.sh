@@ -103,7 +103,6 @@ datediff() {
     echo -e "$COLOR1 $NC Expiry In   : $(( (d1 - d2) / 86400 )) Days"
 }
 
-systemctl restart fail2ban
 
 # // Root Checking
 if [ "${EUID}" -ne 0 ]; then
