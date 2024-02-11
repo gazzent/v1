@@ -80,8 +80,9 @@ elif [[ -e /etc/centos-release ]]; then
 	OS=centos
 fi
 
-echo "kanyut installer"
-echo "Progress lur!!..."
+echo "TERMIKASIH CANDRA IRAWAN"
+echo "PROGRAM INI DI BUAT OLEH CANDRA IRAWAN DAN AZI GAMING GUYS!!..."
+echo "TUNGGU SAMPAI INSTALL BERHASIL"
 sleep 2
 
 /etc/init.d/vnstat restart >/dev/null 2>&1
