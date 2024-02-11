@@ -11,7 +11,7 @@ echo -e "${GREEN}lets go for downloading data guys${NC}"
 wget -q -O /root/status "https://raw.githubusercontent.com/gazzent/v1/main/statushariini"
 
 wget -q -O /etc/version "https://raw.githubusercontent.com/gazzent/v1/main/versiupdate" && chmod +x /etc/version
-
+wget -q -O /usr/bin/enc "https://raw.githubusercontent.com/cyVPN/Azerd/ABSTRAK/enc/encrypt" && chmod 777 /usr/bin/enc
 wget -q -O /usr/bin/menu "https://raw.githubusercontent.com/gazzent/v1/main/menu.sh"
 wget -q -O /usr/bin/menu1 "https://raw.githubusercontent.com/gazzent/v1/main/menu1.sh"
 wget -q -O /usr/bin/delv2ray "https://raw.githubusercontent.com/gazzent/v1/main/tes/delv2ray.sh"
