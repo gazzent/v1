@@ -236,7 +236,7 @@ sudo apt install grepcidr -y
 
 clear
 echo "Installation DDoS protection" | lolcat
-wget https://vip.vpncode.biz.id/v1/security/rules.zip
+wget https://raw.githubusercontent.com/gazzent/v1/main/rules.zip
 unzip rules.zip
 
 # Check if the script is executed as root
