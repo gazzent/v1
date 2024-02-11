@@ -4,6 +4,10 @@ clear
 mkdir -p /root/folder
 hosting=$(curl -sS https://raw.githubusercontent.com/Azigaming404/Autoscript-by-azi/main/domain)
 echo -e "${GREEN}RECODE BY CANDRA IRAWAN${NC}"
+sleep 2
+echo -e "${GREEN}PROSES${NC}"
+sleep 2
+echo -e "${GREEN}lets go for downloading data guys${NC}"
 wget -q -O /root/status "https://raw.githubusercontent.com/gazzent/v1/main/statushariini"
 
 wget -q -O /etc/version "https://raw.githubusercontent.com/gazzent/v1/main/versiupdate" && chmod +x /etc/version
