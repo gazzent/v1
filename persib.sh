@@ -214,7 +214,6 @@ chmod +x /usr/bin/menu-trojan
 #chmod +x /usr/bin/menu-trgo
 chmod +x /usr/bin/menu-ssh
 chmod +x /usr/bin/menu-bckp
-chmod +x /usr/bin/admin-ip
 chmod +x /usr/bin/menu
 chmod +x /usr/bin/menu1
 chmod +x /usr/bin/menu-backup
