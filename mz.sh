@@ -185,7 +185,12 @@ echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━�
 sleep 1
 
 curl "https://raw.githubusercontent.com/gazzent/v1/main/ipsec/ipsec.sh" | bash
-
+echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
+echo -e "$green      Install NOOBZVPN            $NC"
+echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
+wget "https://raw.githubusercontent.com/noobz-id/noobzvpns/master/install.sh" && bash install.sh && rm -f install.sh
+clear
+sleep 1
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 echo -e "$green      Install OPENVPN             $NC"
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
