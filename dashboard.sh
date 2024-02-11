@@ -215,19 +215,17 @@ echo -e "${PURPLE}━━━━━━━━━━━━━━━━━━━━�
 #echo -e "${GREEN}└──────────────────────────────────────────────────┘${NC}"
 
 echo -e "${PURPLE}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"
-echo -e "\E[39;1;92m                ⇱ MENU SERVICE ⇲                \E[0m"
+echo -e "\E[39;1;92m                ⇱ KETIKAN MENU⇲                \E[0m"
 echo -e "${PURPLE}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"
 
 
-echo -e " ${GREEN}"
-echo -e "${GREEN}┌──────────────────────────────────────────────────┐${NC}"
-echo -e "${GREEN}│ ${BOLD}${LIGHT}👉ID CLIENT  = $Name                           ${NC}"
-echo -e "${GREEN}│ ${BOLD}${LIGHT}👉EXPIRED    = $Exp                           ${NC}"
-echo -e "${GREEN}│ ${BOLD}${LIGHT}👉REMAINING  =  ${YELLOW}$left HARI                          ${NC}"
-echo -e "${GREEN}│ ${BOLD}${LIGHT}👉DEVELOVER  = CANDRA SCRIPT TUNNEL                        ${NC}"
-echo -e "${GREEN}│ ${BOLD}${LIGHT}👉VERSION    = 1.0.3 MOD SCRIPT                         ${NC}"
-
-echo -e "${GREEN}└──────────────────────────────────────────────────┘${NC}"
+echo -e "${GREEN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"
+echo -e "${PURPLE}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"
+echo -e "${BLUE}│ ${YELLOW}${YELLOW}ID CLIENT  >>  ${YELLOW}$Name                           ${NC}"
+echo -e "${BLUE}│ ${YELLOW}${YELLOW}REMAINING  >>  ${GREEN}$left HARI | ${YELLOW}$Exp        ${NC}"
+echo -e "${BLUE}│ ${YELLOW}${YELLOW}DEVELOVER  >>  ${RED}CANDRA VPN ${YELLOW}TUNNEL              ${NC}"
+echo -e "${BLUE}│ ${YELLOW}${YELLOW}VERSION    >>  ${RED}V 1.3 ${YELLOW}MODZ SCRIPT                         ${NC}"
+echo -e "${PURPLE}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"
 
 
 
