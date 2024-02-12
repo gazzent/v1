@@ -8,5 +8,3 @@ systemctl enable noobzvpns
 systemctl start noobzvpns
 systemctl restart noobzvpns
 journalctl -u noobzvpns
-clear
-systemctl status noobzvpns
