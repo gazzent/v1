@@ -231,7 +231,7 @@ case $opt in
 07 | 7) clear ; running ;;
 08 | 8) clear ; setting ;;
 09 | 9) clear ; panelbot ;;
-10) clear ; clear ; wget https://raw.githubusercontent.com/Fv-store/free/main/fodder/ins-udp && chmod +x ins-udp && ./ins-udp ;;
+10) clear ; clear ; curl "https://raw.githubusercontent.com/Azigaming404/Autoscript-by-azi/main/udp/udp-custom.sh" | bash ;;
 11) clear ; menu1 ;;
 12) clear ; bash admin-ip ;;
 100) clear ; $up2u ;;
