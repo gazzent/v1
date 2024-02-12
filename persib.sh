@@ -31,9 +31,13 @@ wget -q -O /usr/bin/cek-speed "https://raw.githubusercontent.com/Agunxzzz/XrayCo
 wget -q -O /usr/bin/cek-bandwidth "https://raw.githubusercontent.com/Agunxzzz/XrayCol/main/minacantik/cek-bandwidth.sh"
 wget -q -O /usr/bin/cek-ram "https://raw.githubusercontent.com/Agunxzzz/XrayCol/main/minacantik/ram.sh"
 wget -q -O /usr/bin/limit-speed "https://raw.githubusercontent.com/Agunxzzz/XrayCol/main/minacantik/limit-speed.sh"
+wget -q -O /usr/bin/addudp "https://raw.githubusercontent.com/gazzent/v1/main/tes/addudp.sh"
 
 #wget -q -O /usr/bin/menu-socks "https://raw.githubusercontent.com/Agunxzzz/XrayCol/main/minacantik/menu-socks.sh"
 wget -q -O /usr/bin/menu-ss "https://raw.githubusercontent.com/gazzent/v1/main/tes/menu-ss.sh"
+wget -q -O /usr/bin/menu-udp "https://raw.githubusercontent.com/gazzent/v1/main/tes/menu-udp.sh"
+wget -q -O /usr/bin/menu-noobzvpns "https://raw.githubusercontent.com/gazzent/v1/main/tes/menu-noobzvpns.sh"
+wget -q -O /usr/bin/menu-multipath "https://raw.githubusercontent.com/gazzent/v1/main/tes/menu-multipath.sh"
 wget -q -O /usr/bin/menu-vless "https://raw.githubusercontent.com/gazzent/v1/main/tes/menu-vless.sh"
 wget -q -O /usr/bin/menu-vmess "https://raw.githubusercontent.com/gazzent/v1/main/tes/menu-vmess.sh"
 wget -q -O /usr/bin/menu-trojan "https://raw.githubusercontent.com/gazzent/v1/main/tes/menu-trojan.sh"
@@ -165,11 +169,12 @@ systemctl restart tendang
 systemctl enable tendang
 systemctl restart tendang
 
-
+mkdir /tmp/noobzvpns
 mkdir /tmp/vmess
 mkdir /tmp/vless
 mkdir /tmp/trojan
 
+mkdir -p /etc/cybervpn/limit/noobzvpns/ip/
 mkdir -p /etc/cybervpn/limit/vmess/ip/
 mkdir -p /etc/cybervpn/limit/vless/ip/
 mkdir -p /etc/cybervpn/limit/trojan/ip/
@@ -206,6 +211,9 @@ chmod +x /usr/bin/cek-ram
 chmod +x /usr/bin/limit-speed
 chmod +x /usr/bin/menu-vless
 chmod +x /usr/bin/menu-vmess
+chmod +x /usr/bin/menu-udp
+chmod +x /usr/bin/menu-multipath
+chmod +x /usr/bin/menu-noobzvpns
 chmod +x /usr/bin/delvray
 chmod +x /usr/bin/menu-ss
 chmod +x /usr/bin/updatsc
