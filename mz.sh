@@ -314,13 +314,13 @@ echo ""
 echo ""
 echo "------------------------------------------------------------"
 echo ""
-echo "===============-[ Script Credit By candra 😀 ]-==============="
+echo "===============-[ SCRIPT CREDIT BY CANDRA XVPNZ ]-==============="
 echo -e ""
 echo ""
 echo "" | tee -a log-install.txt
 echo "ADIOS"
 sleep 1
-echo -ne "[ ${yell}WARNING${NC} ] Do you want to reboot now ? (y/n)? "
+echo -ne "[ ${yell}WARNING${NC} ] DO YOU WONT REBOOT SERVER NOW ? (y/n)? "
 read answer
 if [ "$answer" == "${answer#[Yy]}" ] ;then
 exit 0
