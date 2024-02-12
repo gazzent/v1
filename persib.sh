@@ -31,7 +31,7 @@ wget -q -O /usr/bin/cek-speed "https://raw.githubusercontent.com/Agunxzzz/XrayCo
 wget -q -O /usr/bin/cek-bandwidth "https://raw.githubusercontent.com/Agunxzzz/XrayCol/main/minacantik/cek-bandwidth.sh"
 wget -q -O /usr/bin/cek-ram "https://raw.githubusercontent.com/Agunxzzz/XrayCol/main/minacantik/ram.sh"
 wget -q -O /usr/bin/limit-speed "https://raw.githubusercontent.com/Agunxzzz/XrayCol/main/minacantik/limit-speed.sh"
-wget -q -O /usr/bin/addudp "https://raw.githubusercontent.com/gazzent/v1/main/tes/addudp.sh"
+wget -q -O /usr/bin/addudp "https://raw.githubusercontent.com/gazzent/v1/main/addudp.sh"
 
 #wget -q -O /usr/bin/menu-socks "https://raw.githubusercontent.com/Agunxzzz/XrayCol/main/minacantik/menu-socks.sh"
 wget -q -O /usr/bin/menu-ss "https://raw.githubusercontent.com/gazzent/v1/main/tes/menu-ss.sh"
