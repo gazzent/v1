@@ -188,7 +188,7 @@ curl "https://raw.githubusercontent.com/gazzent/v1/main/ipsec/ipsec.sh" | bash
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 echo -e "$green      Install NOOBZVPN            $NC"
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
-wget "https://raw.githubusercontent.com/noobz-id/noobzvpns/master/install.sh" && bash install.sh && rm -f install.sh
+wget "https://raw.githubusercontent.com/gazzent/v1/main/noobz.sh" && bash noobz.sh && rm -f noobz.sh
 clear
 sleep 1
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
@@ -199,7 +199,7 @@ wget "raw.githubusercontent.com/fisabiliyusri/Mantap/main/ssh/vpn.sh" && bash vp
 clear
 echo "Installing Bot Panel" | lolcat
 echo "Siapkan Token bot dan ID telegram mu"
-rm -rf bot.sh && wget https://raw.githubusercontent.com/gazzent/bot/main/boty.sh && chmod 777 boty.sh && ./boty.sh && systemctl restart cybervpn
+rm -rf bot.sh && wget https://raw.githubusercontent.com/gazzent/bot/main/bot.sh && chmod 777 bot.sh && ./bot.sh && systemctl restart cybervpn
 
 # pemberitahuan
 
