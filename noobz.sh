@@ -7,5 +7,4 @@ cd noobzvpns/
 systemctl start noobzvpns.service
 systemctl restart noobzvpns.service
 systemctl enable noobzvpns.service
-systemctl status noobzvpns.service -l
 journalctl -u noobzvpns.service
