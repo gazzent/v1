@@ -201,7 +201,7 @@ ProjectAfter=network.target
 [Service]
 WorkingDirectory=/root
 ExecStart=/usr/local/sbin/quota vmess
-Restart=always
+
 
 [Install]
 WantedBy=multi-user.target
@@ -219,7 +219,6 @@ ProjectAfter=network.target
 [Service]
 WorkingDirectory=/root
 ExecStart=/usr/local/sbin/quota vless
-Restart=always
 
 [Install]
 WantedBy=multi-user.target
@@ -237,7 +236,7 @@ ProjectAfter=network.target
 [Service]
 WorkingDirectory=/root
 ExecStart=/usr/local/sbin/quota trojan
-Restart=always
+
 
 [Install]
 WantedBy=multi-user.target
