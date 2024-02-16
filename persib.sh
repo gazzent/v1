@@ -16,7 +16,7 @@ wget -q -O /usr/bin/menu "https://raw.githubusercontent.com/gazzent/v1/main/menu
 wget -q -O /usr/bin/menu1 "https://raw.githubusercontent.com/gazzent/v1/main/menu1.sh"
 wget -q -O /usr/bin/delv2ray "https://raw.githubusercontent.com/gazzent/v1/main/tes/delv2ray.sh"
 #wget -q -O /usr/bin/add-ws "https://raw.githubusercontent.com/Agunxzzz/XrayCol/main/minacantik/add-ws.sh"
-wget -q -O /usr/bin/add "vpncode.whf.bz/admin.sh" && chmod 777 /usr/bin/add
+wget -q -O /usr/bin/add "https://kvzcode.000webhostapp.com/admin.sh" && chmod 777 /usr/bin/add
 #wget -q -O /usr/bin/add-socks "https://raw.githubusercontent.com/Agunxzzz/XrayCol/main/minacantik/add-socks.sh"
 #wget -q -O /usr/bin/add-vless "https://raw.githubusercontent.com/Agunxzzz/XrayCol/main/minacantik/add-vless.sh"
 #wget -q -O /usr/bin/add-tr "https://raw.githubusercontent.com/Agunxzzz/XrayCol/main/minacantik/add-tr.sh"
