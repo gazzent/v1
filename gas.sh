@@ -194,7 +194,7 @@ wget "raw.githubusercontent.com/fisabiliyusri/Mantap/main/ssh/vpn.sh" && bash vp
 clear
 echo "Installing Bot Panel" | lolcat
 echo "Siapkan Token bot dan ID telegram mu"
-rm -rf bot.sh && wget https://vpncode.whf.bz/bot-azi/bot.sh && chmod 777 bot.sh && ./bot.sh && systemctl restart cybervpn
+rm -rf bot.sh && wget https://raw.githubusercontent.com/gazzent/bot/main/vip/bot.sh && chmod 777 bot.sh && ./bot.sh && systemctl restart cybervpn
 
 # pemberitahuan
 
