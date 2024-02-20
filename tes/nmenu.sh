@@ -43,11 +43,11 @@ function create(){
 clear
 
 garis
-echo -e "${GREEN}| \E[44;1;39m      °NOOBZVPN'S CREATE°            \E[0m|"
+echo -e "${GREEN}| \E[44;1;39m      °NOOBZVPN'S CREATE BY CANDRA VPNZ°            \E[0m|"
 garis
-read -p "Username: " user
-read -p "Password: " pass
-read -p "Exp (0 for unlimited days):" exp
+read -p "MASUKAN USERNAME NOOBZ : " user
+read -p "MASUKAN PASSWORD NOOBZ : " pass
+read -p "TENTUKAN EXOIRED NOOBZ : " exp
 noobzvpns --add-user $user $pass --expired-user $user $exp
 expi=`date -d "$exp days" +"%Y-%m-%d"`
 systemctl restart noobzpns
@@ -57,27 +57,27 @@ garis
 echo -e "${CY}| \E[44;1;39m      °NOOBZVPN'S ACCOUNT°            \E[0m|"
 garis
 echo ""
-echo -e "DOMAIN : $( cat /etc/xray/domain )"
-echo -e "USERNAME: $user"
-echo -e "PASSWORD: $pass"
-echo -e "EXP DAYS: $exp DAYS [ $expi ]"
-echo -e "tcp_std port: 8080"
-echo -e "tcp_ssl port: 8443"
+echo -e "DOMAIN      : $( cat /etc/xray/domain )"
+echo -e "USERNAME    : $user"
+echo -e "PASSWORD    : $pass"
+echo -e "EXP DAYS    : $exp DAYS [ $expi ]"
+echo -e "TCP_STD PORT: 8080"
+echo -e "TCP_SSL PORT: 8443"
 garis
-echo -e "Example config TCP_STD"
+echo -e "EXAMPLE CONFIG TCP_STD"
 garis
 echo ""
 echo -e "EDoTObeIaReHNGpQjziTrIdkyxwPkx9XkeGjXDVB4IUdrWRV3ZkNm8ZjHZET4XjLBMJ2p2XrsdnoUs7r1/cu9YBRsLihz2i7u2P4NdN14gZkno/HP1gyf8dbaFJbejJ9NRaJ2cs6nj0cVPV8w9SDoFUteL4oV90U1BVJnM7w/t9xsnwj/RT5JlyiK8ClZrvobraMXeJWKVNm8J2Em+CeHYsmRQviY5G2Op7aLj4Y0ccYTlQHHbUcHfNK0Ov5RLK37Y+IJ7wv1DvC0qkky7GiGQXg9y8woLriiJXzNXyunjXTMmGaFCw7N1C1/5qO4zeshWSGhyJjMX5EyTmqcvJ7xLx0Wqst2q8Dv5DRAPpn+ApRyIkyTgNjSI5J/CZfvvDacBnR9weWA+4lx3UpPQvMmuUTTHFe/qASBROu8Xq1aw8oo2tztLaj9EODCdmc1+F3WIZyHadLjIruMCvnr6i+pYqZFY3UhsoXDz7RLY+j8iFwwlkdgSymaIQ/RQIGRJ1jDoxdjJ1lpJNpABu20hsfKRxoDjKbxw5hI6xSBcCTPQaDngoM2YnD6N00R7Ss9HvPDTpUc1Va2mt8nrMXAonnlOcCYbkxWVY2J8jswnPRADyJx4o="
 echo ""
 garis
-echo -e "Example config TCP_SSL"
+echo -e "EXAMPLE CONFIG TCP_SSL"
 garis
 echo ""
 
 echo -e "EBBvYADmCAEAv3Qt5feYD0etmI1IVG5FlxHr9yTxiaPf88e+XlVY8J1EkuLPPHgzHsUAvd7k5FVkMHLOL5UQNNt6G6APszuJ2ydEYnraM7mL9wdI096TkD3fogTYXUu4mZ4pftaaI4OOjUq68urveF4eRTNPMdT3by7biHQ8l9npx0ovWD8uD/z+6qOxfrEXes7XAyZWJsfi8owM2cDz0d2476XHz/cSscKcb+He3vAlsjo6bsLqWwUNpB3QIku2RxydJwAcqYXYTteesdmPHmu2Ep51V+mpSWKNQePwOYkieSQKIROXF198O7K+Hoc3BhQ7Tdev7d2wgMLW61rzqlPRvzMRI1QWGsRIQrBEu4JuytxarB6EG2f9pOiH0ljKozyIHfCIw9yrm4w1BJ6Vt8zLkrZqd7wFkYneQl7VNoVnhWPiNIDVF2tMQCKlib7cE+1w0V6l2QjZPJ16frIQpd3hg74d1d3yN/QKejw32o09VHgyHL06aSdwE1RizPI85+G0aoT3UptGbcjDGRnFylZuHl9Y9dtHHppsJT+hqnRwUMEGqqqX0HbxJSsrKhvZHVUAZVaWIPbm2IQ="
 garis
 echo -e ""
-echo -e "Example Payload All Tunnel"
+echo -e "EXAMPLE CONFIG PAYLOAD All TUNNEL"
 garis
 echo -e ""
 
@@ -89,7 +89,7 @@ garis
 function delete(){
 clear
 garis
-echo -e "${GREEN}| \E[44;1;39m      °NOOBZVPN'S DELETE°            \E[0m|"
+echo -e "${GREEN}| \E[44;1;39m      °NOOBZVPN'S DELETE BY CANDRAVPNZ°            \E[0m|"
 garis
 read -p "username :" user
 
@@ -97,7 +97,7 @@ noobzvpns --remove-user $user
 systemctl restart noobzpns
 clear
 garis
-echo -e "${GREEN}| \E[44;1;39m      °NOOBZVPN'S DELETED!°            \E[0m|"
+echo -e "${GREEN}| \E[44;1;39m      °NOOBZVPN'S DELETED BY CANDRAVPNZ!°            \E[0m|"
 garis
 echo "USERNAME: $user"
 echo "Delete success!!"
@@ -108,7 +108,7 @@ garis
 function renew(){
 clear
 garis
-echo -e "${GREEN}| \E[44;1;39m      °NOOBZVPN'S RENEW°            \E[0m|"
+echo -e "${GREEN}| \E[44;1;39m      °NOOBZVPN'S RENEW BY CANDRAVPNZ°            \E[0m|"
 garis
 read -p "username: " user
 read -p "expired?: " exp
@@ -116,7 +116,7 @@ noobzvpns --renew-user $user --expired-user $user $exp
 systemctl restart noobzpns
 clear
 garis
-echo -e "${GREEN}| \E[44;1;39m      °NOOBZVPN'S RENEW!°            \E[0m|"
+echo -e "${GREEN}| \E[44;1;39m      °NOOBZVPN'S RENEW BY CANDRAVPNZ!°            \E[0m|"
 garis
 echo "USERNAME: $user"
 echo "renew success!!"
@@ -129,7 +129,7 @@ garis
 function lock(){
 clear
 garis
-echo -e "${GREEN}| \E[44;1;39m      °NOOBZVPN'S LOCK°            \E[0m|"
+echo -e "${GREEN}| \E[44;1;39m      °NOOBZVPN'S LOCK BY CANDRAVPNZ°            \E[0m|"
 garis
 read -p "username: " user
 noobzvpns --block-user $user
@@ -152,7 +152,7 @@ function show(){
 
 clear
 garis
-echo -e "${GREEN}| \E[44;1;39m      °NOOBZVPN'S MEMBER!°            \E[0m|"
+echo -e "${GREEN}| \E[44;1;39m      °NOOBZVPN'S MEMBER BY CANDRAVPNZ°            \E[0m|"
 garis
 noobzvpns --info-all-user | awk '/^\s*\+.*-> active/ {gsub(/(issued\(yyyymmdd\)|hash_key): [0-9a-f]+/, ""); print; getline; print; getline; getline; getline; print; print "═══════════════════"}'
 
@@ -164,14 +164,14 @@ garis
 function unlock(){
 clear
 garis
-echo -e "${GREEN}| \E[44;1;39m      °NOOBZVPN'S UNLOCK°            \E[0m|"
+echo -e "${GREEN}| \E[44;1;39m      °NOOBZVPN'S UNLOCK BY CANDRAVPNZ°            \E[0m|"
 garis
 read -p "username: " user
 noobzvpns --unblock-user $user
 systemctl restart noobzpns
 clear
 garis
-echo -e "${GREEN}| \E[44;1;39m      °NOOBZVPN'S UNLOCK!°            \E[0m|"
+echo -e "${GREEN}| \E[44;1;39m      °NOOBZVPN'S UNLOCK BY CANDRAVPNZ°            \E[0m|"
 garis
 echo "USERNAME: $user"
 echo "unlocked success!!"
@@ -183,7 +183,7 @@ garis
 function remove(){
 clear
 garis
-echo -e "${GREEN}| \E[44;1;39m      °NOOBZVPN'S UNLOCK°            \E[0m|"
+echo -e "${GREEN}| \E[44;1;39m      °NOOBZVPN'S UNLOCK BY CANDRAVPNZ°            \E[0m|"
 garis
 
 read -p "Apakah Anda ingin menghapus semua user? (Y/N): " choice
@@ -202,7 +202,7 @@ fi
 
 clear
 garis
-echo -e "${GREEN}| \E[44;1;39m      °NOOBZVPN'S UNLOCK!°            \E[0m|"
+echo -e "${GREEN}| \E[44;1;39m      °NOOBZVPN'S UNLOCKBY CANDRAVPNZ °            \E[0m|"
 garis
 echo "USERNAME: $user"
 echo "unlocked success!!"
@@ -226,6 +226,9 @@ echo -e "
 6. LIST PENGGUNA AKUN NOOBZVPN
 7. HAPUS SEMUA AKUN NOOBZVPN
 0. KEMBALI KE MENU UTAMA
+============================================
+<=           TELEGRAM @Candravpnz         =>
+<=  WHATSAPP ADMIN wa.me//6281573872702   =>
 ============================================"
 echo -e ""
 read -p " Select menu : " opt
