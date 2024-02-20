@@ -226,7 +226,7 @@ echo -e "
 6. LIST PENGGUNA AKUN NOOBZVPN
 7. HAPUS SEMUA AKUN NOOBZVPN
 0. KEMBALI KE MENU UTAMA
-============================================="
+============================================"
 echo -e ""
 read -p " Select menu : " opt
 echo -e ""
