@@ -40,6 +40,7 @@ wget -q -O /usr/bin/menu-noobzvpns "https://raw.githubusercontent.com/gazzent/v1
 wget -q -O /usr/bin/menu-multipath "https://raw.githubusercontent.com/gazzent/v1/main/tes/menu-multipath.sh"
 wget -q -O /usr/bin/menu-vless "https://raw.githubusercontent.com/gazzent/v1/main/tes/menu-vless.sh"
 wget -q -O /usr/bin/menu-vmess "https://raw.githubusercontent.com/gazzent/v1/main/tes/menu-vmess.sh"
+wget -q -O /usr/bin/menu-noobz "https://raw.githubusercontent.com/gazzent/v1/main/tes/nmenu.sh"
 wget -q -O /usr/bin/menu-trojan "https://raw.githubusercontent.com/gazzent/v1/main/tes/menu-trojan.sh"
 #wget -q -O /usr/bin/menu-trgo "https://raw.githubusercontent.com/Agunxzzz/XrayCol/main/minacantik/menu-trgo.sh"
 wget -q -O /usr/bin/menu-ssh "https://raw.githubusercontent.com/gazzent/v1/main/menu-ssh.sh"
@@ -210,10 +211,10 @@ chmod +x /usr/bin/cek-bandwidth
 chmod +x /usr/bin/cek-ram
 chmod +x /usr/bin/limit-speed
 chmod +x /usr/bin/menu-vless
+chmod +x /usr/bin/menu-noobz
 chmod +x /usr/bin/menu-vmess
 chmod +x /usr/bin/menu-udp
 chmod +x /usr/bin/menu-multipath
-chmod +x /usr/bin/menu-noobzvpns
 chmod +x /usr/bin/delvray
 chmod +x /usr/bin/menu-ss
 chmod +x /usr/bin/updatsc
