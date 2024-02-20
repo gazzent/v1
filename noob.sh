@@ -1,9 +1,9 @@
 #!/bin/bash
 
-# / Rerechan02 Install NoobZVPN'S
+# / Candra Vpn Store Install NoobZVPN'S
 # / Free Open Source
 # / It is prohibited to sell this script 
-# / @fn_project | @ Rerechan02 | @PR_Aiman
+# / @CANDRA | @Candravpn | @candra-vpn_store
 
 # [ Create Directory File ]
 mkdir -p /etc/noobzvpns
@@ -42,6 +42,6 @@ systemctl enable noobzvpns
 systemctl restart noobzvpns
 
 clear
-echo " Done Install "
+echo " DOBE INSTALL NOOBZVPNS"
 sleep 2
 clear
