@@ -29,13 +29,13 @@ JSON
 
 
 # [ wget ambil file ]
-wget -O /usr/bin/noobzvpns "https://github.com/noobz-id/noobzvpns/raw/master/noobzvpns.x86_64"
+wget -O /usr/bin/noobzvpns "https://raw.githubusercontent.com/noobz-id/noobzvpns/master/noobzvpns.x86_64"
 
 # [ Memberi Izin Exec pada file biner ]
 chmod +x /usr/bin/noobzvpns
 
 # [ Mengambil Service yang di perlukan ]
-wget -O /etc/systemd/system/noobzvpns.service "https://github.com/noobz-id/noobzvpns/raw/master/noobzvpns.service"
+wget -O /etc/systemd/system/noobzvpns.service "https://raw.githubusercontent.com/noobz-id/noobzvpns/master/noobzvpns.service"
 
 # [ Enable & Start Service ]
 systemctl enable noobzvpns
