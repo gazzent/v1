@@ -61,20 +61,20 @@ echo -e "DOMAIN : $( cat /etc/xray/domain )"
 echo -e "USERNAME: $user"
 echo -e "PASSWORD: $pass"
 echo -e "EXP DAYS: $exp DAYS [ $expi ]"
-echo -e "tcp_std port: 80"
-echo -e "tcp_ssl port: 443"
+echo -e "tcp_std port: 8080"
+echo -e "tcp_ssl port: 8443"
 garis
 echo -e "Example config TCP_STD"
 garis
 echo ""
-echo -e "EFZZaNjbazXEI1p6zj32+XiWHKi7l86IDWgSkrQE8CGOAQF51Rp1Qp5tgqjCJLwQMh7EcFRFz/t3LDbj/oXl+cu6E8cGPpijz2tNIwreKaazj98RS5DE4CKjI4umYwUNhq7mUpdBussNAYIKLmAqIgL1EcwFcrMd0Zd1OliRWYghp3DRxiaeTAU85qDIYRREGIYEqWIGQ4nurSUVqrPugB2XcZE8naAw/xtManW7+QHMARl8QlaIa298sg2dXvSj+/JAVfypILMy3xhDTm3oBl35GnSxXS2iQNU0kozbGagDJnCOXt2FU5xmx/X9FI8KwAbdHWPzTKPQMbKPw6oABgUnIE13LVi4WenTR5BUoc7pDUFrLC8ssor4kToUz/F9s/lr9iPVtxEIpKUib/w7yI3VaXdoTdwtjGMLU8GdxY2aMUGidJuY5zY8Vgta9jfdeGLWSbbvK3ZjeFjmSjLwIfX/OQXDC439H6tV3/1o9l+hnRnWrZoWyOHLJfVlV86mLWMEZoOx9kCY8sJz2I50iBwrLcvkcwu8YnskuwrZTnA1nt9y7sMKlc4T8HMDmF9UqHvB3LKhtOaanUNmob6MwqqeEA=="
+echo -e "EDoTObeIaReHNGpQjziTrIdkyxwPkx9XkeGjXDVB4IUdrWRV3ZkNm8ZjHZET4XjLBMJ2p2XrsdnoUs7r1/cu9YBRsLihz2i7u2P4NdN14gZkno/HP1gyf8dbaFJbejJ9NRaJ2cs6nj0cVPV8w9SDoFUteL4oV90U1BVJnM7w/t9xsnwj/RT5JlyiK8ClZrvobraMXeJWKVNm8J2Em+CeHYsmRQviY5G2Op7aLj4Y0ccYTlQHHbUcHfNK0Ov5RLK37Y+IJ7wv1DvC0qkky7GiGQXg9y8woLriiJXzNXyunjXTMmGaFCw7N1C1/5qO4zeshWSGhyJjMX5EyTmqcvJ7xLx0Wqst2q8Dv5DRAPpn+ApRyIkyTgNjSI5J/CZfvvDacBnR9weWA+4lx3UpPQvMmuUTTHFe/qASBROu8Xq1aw8oo2tztLaj9EODCdmc1+F3WIZyHadLjIruMCvnr6i+pYqZFY3UhsoXDz7RLY+j8iFwwlkdgSymaIQ/RQIGRJ1jDoxdjJ1lpJNpABu20hsfKRxoDjKbxw5hI6xSBcCTPQaDngoM2YnD6N00R7Ss9HvPDTpUc1Va2mt8nrMXAonnlOcCYbkxWVY2J8jswnPRADyJx4o="
 echo ""
 garis
 echo -e "Example config TCP_SSL"
 garis
 echo ""
 
-echo -e "EHx0bOmSNzB/wWtLU6epQAQI3hvQZSXpMXWlw58Num2d3AToQLoKMbMQxYmQFlEYHn2AMsEla/xxnzflBE+irSh6pEziK7QRVonM1VxsNljQPUwhQc0GgiNuj07xuuNcvT5sdvETBhHHSSR/vLiVAbQ35fsB4hUjugWK9eoHQqZc9Mk/44qqUzYVxM9O1jMm7JciP/7rGi/pqC99ZjI2Wxi6of0eVuAuFq1oLF+/1r8qJws0PQRuFEK5JfIyMa6678w56VcHVSQbbMMTegxXXapEO8QTZ6p3f9VQQ4DQXLIvbwnGaWdVG91B0bAtV1SSk9MH2KRSj5gkI9/OBC9rdrvfgj7HQftfIATzbMXDHQZvgGe0NmO/MAZJcOMewooJPaM1ue2rT/z4MNsNSu1jA53l99H67JfVMn/euCpCYb6xzgpDnNoTiyk2BXzjcbE5FtgqjL8NE0f6sRBDR8DGEBjNtozSLewogZw6sp6uuSEz2hmoYRclkwyVLBvkDEvRJT8wny8hTwnRTH6TZjqLqfltGGfpGVr2YosAQqDTTAaxq1v9Yihuzl7vjOHBymnV4jGn+cdDlvfmcHNgxA=="
+echo -e "EBBvYADmCAEAv3Qt5feYD0etmI1IVG5FlxHr9yTxiaPf88e+XlVY8J1EkuLPPHgzHsUAvd7k5FVkMHLOL5UQNNt6G6APszuJ2ydEYnraM7mL9wdI096TkD3fogTYXUu4mZ4pftaaI4OOjUq68urveF4eRTNPMdT3by7biHQ8l9npx0ovWD8uD/z+6qOxfrEXes7XAyZWJsfi8owM2cDz0d2476XHz/cSscKcb+He3vAlsjo6bsLqWwUNpB3QIku2RxydJwAcqYXYTteesdmPHmu2Ep51V+mpSWKNQePwOYkieSQKIROXF198O7K+Hoc3BhQ7Tdev7d2wgMLW61rzqlPRvzMRI1QWGsRIQrBEu4JuytxarB6EG2f9pOiH0ljKozyIHfCIw9yrm4w1BJ6Vt8zLkrZqd7wFkYneQl7VNoVnhWPiNIDVF2tMQCKlib7cE+1w0V6l2QjZPJ16frIQpd3hg74d1d3yN/QKejw32o09VHgyHL06aSdwE1RizPI85+G0aoT3UptGbcjDGRnFylZuHl9Y9dtHHppsJT+hqnRwUMEGqqqX0HbxJSsrKhvZHVUAZVaWIPbm2IQ="
 garis
 echo -e ""
 echo -e "Example Payload All Tunnel"
@@ -214,19 +214,19 @@ garis
 
 clear
 echo -e "
-===========================
-<= [ NOOBZVPN'S SERVER ] =>
-===========================
+============================================
+<= [NOOBZVPNS SERVER BY CANDRA-VPN-STORE] =>
+============================================
 
-1. Create Noobzpn's Acount
-2. Delete Noobzvpn's Acount
-3. Renew Noobzvpn's Acount
-4. Lock Acount Noobzvpn's
-5. Unlock Acount Noobzvpn's
-6. List Member Acount Noobzvpn's
-7. Delete All Acount Noobzvpn's
-0. Back To Menu
-==========================="
+1. BUAT AKUN NOOBZVPN
+2. HAPUS AKUN NOOBZVPN
+3. PERPANJANG AKUN NOOBZVPN
+4. KUNCI AKUN NOOBZVPN
+5. UNLOCK AKUN NOOBZVPN
+6. LIST PENGGUNA AKUN NOOBZVPN
+7. HAPUS SEMUA AKUN NOOBZVPN
+0. KEMBALI KE MENU UTAMA
+============================================="
 echo -e ""
 read -p " Select menu : " opt
 echo -e ""
