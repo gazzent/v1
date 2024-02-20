@@ -41,7 +41,6 @@ wget -O /etc/systemd/system/noobzvpns.service "https://raw.githubusercontent.com
 systemctl enable noobzvpns
 systemctl restart noobzvpns
 
-clear
 echo " DOBE INSTALL NOOBZVPNS"
 sleep 2
 clear
