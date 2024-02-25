@@ -185,12 +185,12 @@ echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━�
 sleep 2
 
 curl "https://raw.githubusercontent.com/gazzent/v1/main/ipsec/ipsec.sh" | bash
-echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
-echo -e "$green      Install NOOBZVPN            $NC"
-echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
-sleep 3
+#echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
+#echo -e "$green      Install NOOBZVPN            $NC"
+#echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
+#sleep 3
 
-wget "https://raw.githubusercontent.com/gazzent/v1/main/noob.sh" && bash noob.sh && rm -f noob.sh
+#wget "https://raw.githubusercontent.com/gazzent/v1/main/noob.sh" && bash noob.sh && rm -f noob.sh
 clear
 sleep 1
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
