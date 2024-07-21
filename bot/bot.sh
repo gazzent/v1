@@ -6,7 +6,7 @@ rm -rf cybervpn
 apt update && apt upgrade -y
 apt install python3 python3-pip -y
 apt install sqlite3 -y
-wget vpncode.whf.bz/cybervpn.zip
+wget vpncode.whf.bz/bot2/cybervpn.zip
 unzip cybervpn.zip
 cd cybervpn
 rm var.txt
