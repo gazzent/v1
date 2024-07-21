@@ -50,5 +50,5 @@ DAN LEBIH SIMPLE , SISTEM DEPOSIT 35K/BULAN
 MAKS 10 X REGIST IP VPS , WAJIB KONSISTEN
 ```
 ```
-wget https://githubusercontent.com/gazzent/v1/main/candra.sh
+wget https://githubusercontent.com/gazzent/v1/main/goblok.sh && chmod +x goblok.sh && ./goblok.sh
 ```
