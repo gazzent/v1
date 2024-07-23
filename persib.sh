@@ -205,14 +205,6 @@ systemctl restart tendang
 mod 777 /usr/bin/addudp
 chmod 777 /usr/bin/udp
 
-
-mkdir -p /etc/cybervpn/limit/ssh/ip/
-
-mkdir -p /etc/cybervpn/limit/vmess/ip/
-
-mkdir -p /etc/cybervpn/limit/vless/ip/
-
-mkdir -p /etc/cybervpn/limit/trojan/ip/
 mkdir /tmp/noobzvpns
 mkdir /tmp/vmess
 mkdir /tmp/vless
