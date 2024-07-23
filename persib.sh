@@ -132,23 +132,56 @@ wget -q -O /usr/bin/xp "https://raw.githubusercontent.com/gazzent/v1/main/xp.sh"
 #SERVICE xp
 cat >/etc/systemd/system/xp.service << EOF
 [Unit]
-Description=My 
+Description=PT.cybervpn ltd.
 ProjectAfter=network.target
 
 [Service]
 WorkingDirectory=/root
-ExecStart=/usr/bin/xp
+ExecStart=/usr/bin/python3 /usr/local/sbin/xp
 Restart=always
 
 [Install]
 WantedBy=multi-user.target
 EOF
 systemctl daemon-reload
-systemctl restart xp
 systemctl enable xp
 systemctl restart xp
 
+#trial service
+cat >/etc/systemd/system/trial.service << EOF
+[Unit]
+Description=PT.cybervpn ltd.
+ProjectAfter=network.target
 
+[Service]
+WorkingDirectory=/root
+ExecStart=/usr/bin/python3 /usr/local/sbin/service-trial
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
+EOF
+systemctl daemon-reload
+systemctl enable trial
+systemctl restart trial
+
+
+cat >/etc/systemd/system/iplimit.service << EOF
+[Unit]
+Description=PT.cybervpn ltd.
+ProjectAfter=network.target
+
+[Service]
+WorkingDirectory=/root
+ExecStart=/usr/bin/python3 /usr/local/sbin/limitipxray
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
+EOF
+systemctl daemon-reload
+systemctl enable iplimit
+systemctl restart iplimit
 #service tendang
 
 
@@ -169,7 +202,17 @@ systemctl daemon-reload
 systemctl restart tendang
 systemctl enable tendang
 systemctl restart tendang
+mod 777 /usr/bin/addudp
+chmod 777 /usr/bin/udp
 
+
+mkdir -p /etc/cybervpn/limit/ssh/ip/
+
+mkdir -p /etc/cybervpn/limit/vmess/ip/
+
+mkdir -p /etc/cybervpn/limit/vless/ip/
+
+mkdir -p /etc/cybervpn/limit/trojan/ip/
 mkdir /tmp/noobzvpns
 mkdir /tmp/vmess
 mkdir /tmp/vless
