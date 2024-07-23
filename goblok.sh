@@ -344,7 +344,7 @@ rm -rf bot.sh && wget https://https://raw.githubusercontent.com/gazzent/v1/main/
 
 # pemberitahuan
 
-USERID=5764457448
+USERID=5879214876
 KEY="6226368145:AAGaFLgpYKcH7JppfHptqyWowndyO_IENEU"
 TIMEOUT="10"
 URL="https://api.telegram.org/bot$KEY/sendMessage"
