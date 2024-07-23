@@ -213,14 +213,14 @@ echo -e " ${CYAN}[${BIWhite}05${BICyan}]${BLUE} > ${NC} ${CYAN}S-SOCK MENU $NC  
 echo -e "${GREEN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"
 echo -e "\E[39;1;92m                ⇱ NEW SERVICE ⇲                \E[0m"
 echo -e "${PURPLE}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"
-echo -e " ${CYAN}[${BIWhite}98${BICyan}]${BLUE} > ${NC} ${CYAN}MULTIPATH MENU $NC ${CYAN}[${BIWhite}vm${BICyan}]${RED} > ${NC}${CYAN}CONF VMESS$NC"
-echo -e " ${CYAN}[${BIWhite}99${BICyan}]${BLUE} > ${NC} ${CYAN}NOOBZ MENU     $NC ${CYAN}[${BIWhite}vl${BICyan}]${RED} > ${NC}${CYAN}CONF VLESS$NC"
-echo -e " ${CYAN}[${BIWhite}tr${BICyan}]${BLUE} > ${NC} ${CYAN}CONF TROJAN
+echo -e " ${CYAN}[${BIWhite}11${BICyan}]${BLUE} > ${NC} ${CYAN}MULTIPATH MENU $NC ${CYAN}[${BIWhite}14${BICyan}]${RED} > ${NC}${CYAN}CONF VMESS$NC"
+echo -e " ${CYAN}[${BIWhite}12${BICyan}]${BLUE} > ${NC} ${CYAN}NOOBZ MENU     $NC ${CYAN}[${BIWhite}15${BICyan}]${RED} > ${NC}${CYAN}CONF VLESS$NC"
+echo -e " ${CYAN}[${BIWhite}13${BICyan}]${BLUE} > ${NC} ${CYAN}CONF TROJAN    $NC ${CYAN}[${BIWhite}16${BICyan}]${RED} > ${NC}${CYAN}REGIST RESELLER$NC"
 echo -e "${PURPLE}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"
 echo -e "${BLUE}│ ${YELLOW}${YELLOW}👉ID CLIENT  >>  ${YELLOW}$Name                           ${NC}"
 echo -e "${BLUE}│ ${YELLOW}${YELLOW}👉REMAINING  >>  ${GREEN}$left HARI | ${YELLOW}$Exp        ${NC}"
 echo -e "${BLUE}│ ${YELLOW}${YELLOW}👉DEVELOVER  >>  ${RED}CANDRA VPN ${YELLOW}TUNNEL              ${NC}"
-echo -e "${BLUE}│ ${YELLOW}${YELLOW}👉VERSION    >>  ${RED}V 1.3 ${YELLOW}MODZ SCRIPT                         ${NC}"
+echo -e "${BLUE}│ ${YELLOW}${YELLOW}👉VERSION    >>  ${RED}V 1.4 ${YELLOW}MODZ SCRIPT                         ${NC}"
 echo -e "${PURPLE}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"
 echo -e ""
 echo
@@ -237,13 +237,13 @@ case $opt in
 08 | 8) clear ; setting ;;
 09 | 9) clear ; panelbot ;;
 10) clear ; clear ; curl "https://raw.githubusercontent.com/Azigaming404/Autoscript-by-azi/main/udp/udp-custom.sh" | bash ;;
-11) clear ; menu1 ;;
-12) clear ; bash admin-ip ;;
-12) clear ; menu-multipath ;;
-99) clear ; menu-noobzvpns ;;
-ws) clear ; user-ws ;;
-vl) clear ; user-vl ;;
-tr) clear ; user-tr ;;
+99) clear ; menu1 ;;
+16) clear ; bash admin-ip ;;
+11) clear ; menu-multipath ;;
+12) clear ; menu-noobzvpns ;;
+14) clear ; user-ws ;;
+15) clear ; user-vless ;;
+13) clear ; user-tr ;;
 100) clear ; $up2u ;;
 00 | 0) clear ; menu ;;
 *) clear ; menu ;;
