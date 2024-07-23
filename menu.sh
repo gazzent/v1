@@ -213,8 +213,9 @@ echo -e " ${CYAN}[${BIWhite}05${BICyan}]${BLUE} > ${NC} ${CYAN}S-SOCK MENU $NC  
 echo -e "${GREEN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"
 echo -e "\E[39;1;92m                ⇱ NEW SERVICE ⇲                \E[0m"
 echo -e "${PURPLE}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"
-echo -e " ${CYAN}[${BIWhite}98${BICyan}]${BLUE} > ${NC} ${CYAN}MULTIPATH MENU $NC"
-echo -e " ${CYAN}[${BIWhite}99${BICyan}]${BLUE} > ${NC} ${CYAN}NOOBZ MENU $NC"
+echo -e " ${CYAN}[${BIWhite}98${BICyan}]${BLUE} > ${NC} ${CYAN}MULTIPATH MENU $NC ${CYAN}[${BIWhite}vm${BICyan}]${RED} > ${NC}${CYAN}CONF VMESS$NC"
+echo -e " ${CYAN}[${BIWhite}99${BICyan}]${BLUE} > ${NC} ${CYAN}NOOBZ MENU     $NC ${CYAN}[${BIWhite}vl${BICyan}]${RED} > ${NC}${CYAN}CONF VLESS$NC"
+echo -e " ${CYAN}[${BIWhite}tr${BICyan}]${BLUE} > ${NC} ${CYAN}CONF TROJAN
 echo -e "${PURPLE}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"
 echo -e "${BLUE}│ ${YELLOW}${YELLOW}👉ID CLIENT  >>  ${YELLOW}$Name                           ${NC}"
 echo -e "${BLUE}│ ${YELLOW}${YELLOW}👉REMAINING  >>  ${GREEN}$left HARI | ${YELLOW}$Exp        ${NC}"
@@ -240,6 +241,9 @@ case $opt in
 12) clear ; bash admin-ip ;;
 12) clear ; menu-multipath ;;
 99) clear ; menu-noobzvpns ;;
+ws) clear ; user-ws ;;
+vl) clear ; user-vl ;;
+tr) clear ; user-tr ;;
 100) clear ; $up2u ;;
 00 | 0) clear ; menu ;;
 *) clear ; menu ;;
