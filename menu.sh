@@ -213,7 +213,8 @@ echo -e " ${CYAN}[${BIWhite}05${BICyan}]${BLUE} > ${NC} ${CYAN}S-SOCK MENU $NC  
 echo -e "${GREEN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"
 echo -e "\E[39;1;92m                ⇱ NEW SERVICE ⇲                \E[0m"
 echo -e "${PURPLE}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"
-echo -e " ${CYAN}[${BIWhite}99${BICyan}]${BLUE} > ${NC} ${CYAN}NOOBZ MENU $NC
+echo -e " ${CYAN}[${BIWhite}98${BICyan}]${BLUE} > ${NC} ${CYAN}MULTIPATH MENU $NC"
+echo -e " ${CYAN}[${BIWhite}99${BICyan}]${BLUE} > ${NC} ${CYAN}NOOBZ MENU $NC"
 echo -e "${PURPLE}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"
 echo -e "${BLUE}│ ${YELLOW}${YELLOW}👉ID CLIENT  >>  ${YELLOW}$Name                           ${NC}"
 echo -e "${BLUE}│ ${YELLOW}${YELLOW}👉REMAINING  >>  ${GREEN}$left HARI | ${YELLOW}$Exp        ${NC}"
@@ -237,6 +238,7 @@ case $opt in
 10) clear ; clear ; curl "https://raw.githubusercontent.com/Azigaming404/Autoscript-by-azi/main/udp/udp-custom.sh" | bash ;;
 11) clear ; menu1 ;;
 12) clear ; bash admin-ip ;;
+12) clear ; menu-multipath ;;
 99) clear ; menu-noobzvpns ;;
 100) clear ; $up2u ;;
 00 | 0) clear ; menu ;;
