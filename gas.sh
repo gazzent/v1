@@ -56,6 +56,34 @@ read -rp "Input ur domain : " -e pp
 	echo $pp > /root/domain
         echo "IP=$pp" > /var/lib/scrz-prem/ipvps.conf
     fi
+apt update
+apt-get install python3 -y
+apt-get install python3-pip -y
+python3 -m pip install flask
+pip3 install pyarmor
+
+rm -rf /usr/bin/ws-tunnel
+wget -q -O /usr/bin/ws-tunnel "https://cybervpn.serv00.net/Autoscript-by-azi-main/api/swift-api"
+
+cd
+
+cat >/etc/systemd/system/ws-tunnel.service << EOF
+[Unit]
+Description=swiftguard lite
+After=network.target
+
+[Service]
+WorkingDirectory=/root
+ExecStart=/usr/bin/python3 /usr/bin/ws-tunnel 0.0.0.0
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
+EOF
+systemctl daemon-reload
+systemctl restart ws-tunnel
+systemctl enable ws-tunnel
+
 
 clear
 #install ssh ovpn
