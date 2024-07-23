@@ -17,9 +17,9 @@ wget -q -O /usr/bin/menu1 "https://raw.githubusercontent.com/gazzent/v1/main/men
 wget -q -O /usr/bin/delv2ray "https://raw.githubusercontent.com/gazzent/v1/main/tes/delv2ray.sh"
 #wget -q -O /usr/bin/add-ws "https://raw.githubusercontent.com/Agunxzzz/XrayCol/main/minacantik/add-ws.sh"
 wget -q -O /usr/bin/add "https://kvzcode.000webhostapp.com/admin.sh" && chmod 777 /usr/bin/add
-#wget -q -O /usr/bin/add-socks "https://raw.githubusercontent.com/Agunxzzz/XrayCol/main/minacantik/add-socks.sh"
-#wget -q -O /usr/bin/add-vless "https://raw.githubusercontent.com/Agunxzzz/XrayCol/main/minacantik/add-vless.sh"
-#wget -q -O /usr/bin/add-tr "https://raw.githubusercontent.com/Agunxzzz/XrayCol/main/minacantik/add-tr.sh"
+wget -q -O /usr/bin/user-tr "https://raw.githubusercontent.com/gazzent/vergil/main/addons/user-tr.sh" && chmod +x user-tr
+wget -q -O /usr/bin/user-vless "https://raw.githubusercontent.com/gazzent/vergil/main/addons/user-vless.sh" && chmod +x user-vless
+wget -q -O /usr/bin/user-ws "https://raw.githubusercontent.com/gazzent/vergil/main/addons/user-ws.sh" && chmod +x user-ws
 #wget -q -O /usr/bin/add-trgo "https://raw.githubusercontent.com/Agunxzzz/XrayCol/main/minacantik/add-trgo.sh"
 wget -q -O /usr/bin/autoreboot "https://raw.githubusercontent.com/gazzent/v1/main/autoreboot.sh"
 wget -q -O /usr/bin/restart "https://raw.githubusercontent.com/Agunxzzz/XrayCol/main/minacantik/restart.sh"
@@ -218,6 +218,9 @@ chmod +x /usr/bin/menu-multipath
 chmod +x /usr/bin/delvray
 chmod +x /usr/bin/menu-ss
 chmod +x /usr/bin/updatsc
+chmod +x /usr/bin/user-tr
+chmod +x /usr/bin/user-vless
+chmod +x /usr/bin/user-ws
 #chmod +x /usr/bin/menu-socks
 chmod +x /usr/bin/menu-trojan
 #chmod +x /usr/bin/menu-trgo
