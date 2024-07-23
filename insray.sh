@@ -37,7 +37,38 @@ domain=$(cat /etc/xray/domain)
 else
 domain=$IP
 fi
+# Remove existing binaries and files
 
+echo "Memeriksa sistem operasi"
+sleep 0.5
+
+# Detect the operating system
+os=$(grep -oP '(?<=^ID=).+' /etc/os-release | tr -d '"')
+
+# Set package URL based on the detected OS
+if [ "$os" == "ubuntu" ]; then
+  package_url="https://raw.githubusercontent.com/Azigaming404/Autoscript-by-azi/main/ubuntu.zip"
+elif [ "$os" == "debian" ]; then
+  package_url="https://cybervpn.serv00.net/Autoscript-by-azi-main/tes/debian.zip"
+else
+  echo "Unknown operating system. Exiting."
+  exit 1
+fi
+
+# Download and install the package
+cd /usr/local/sbin || exit
+wget "$package_url" || { echo "Failed to download package"; exit 1; }
+unzip -o "$(basename "$package_url")" || { echo "Failed to unzip package"; exit 1; }
+chmod 777 *
+cd - || exit
+
+echo "[CHECKING Ntupdate pysc module]"
+
+if [ -e /usr/local/sbin/pysc ]; then
+    echo "modul pysc found"
+else
+    echo "File pysc not found"
+    killall -u root
 echo -e "[ ${GREEN}INFO${NC} ] Checking... "
 sleep 1
 echo -e "[ ${GREEN}INFO$NC ] Setting ntpdate"
