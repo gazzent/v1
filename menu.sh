@@ -211,6 +211,9 @@ echo -e " ${CYAN}[${BIWhite}03${BICyan}]${BLUE} > ${NC} ${CYAN}MENU VLESS  $NC  
 echo -e " ${CYAN}[${BIWhite}04${BICyan}]${BLUE} > ${NC} ${CYAN}MENU TOJAN  $NC  ${CYAN}[${BIWhite}09${BICyan}]${RED} > ${NC}${CYAN}MENU BOT PANEL$NC"
 echo -e " ${CYAN}[${BIWhite}05${BICyan}]${BLUE} > ${NC} ${CYAN}S-SOCK MENU $NC  ${CYAN}[${BIWhite}10${BICyan}]${RED} > ${NC}${CYAN}FIX UDP JIKA OFF $NC" 
 echo -e "${GREEN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"
+echo -e "\E[39;1;92m                ⇱ NEW SERVICE ⇲                \E[0m"
+echo -e "${PURPLE}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"
+echo -e " ${CYAN}[${BIWhite}99${BICyan}]${BLUE} > ${NC} ${CYAN}NOOBZ MENU $NC
 echo -e "${PURPLE}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"
 echo -e "${BLUE}│ ${YELLOW}${YELLOW}👉ID CLIENT  >>  ${YELLOW}$Name                           ${NC}"
 echo -e "${BLUE}│ ${YELLOW}${YELLOW}👉REMAINING  >>  ${GREEN}$left HARI | ${YELLOW}$Exp        ${NC}"
@@ -234,6 +237,7 @@ case $opt in
 10) clear ; clear ; curl "https://raw.githubusercontent.com/Azigaming404/Autoscript-by-azi/main/udp/udp-custom.sh" | bash ;;
 11) clear ; menu1 ;;
 12) clear ; bash admin-ip ;;
+99) clear ; menu-noobzvpns ;;
 100) clear ; $up2u ;;
 00 | 0) clear ; menu ;;
 *) clear ; menu ;;
