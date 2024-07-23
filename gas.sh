@@ -69,63 +69,7 @@ sleep 2
 wget https://raw.githubusercontent.com/gazzent/v1/main/nginx-ssl.sh && chmod +x nginx-ssl.sh && ./nginx-ssl.sh
 wget -q -O kanyut.sh https://raw.githubusercontent.com/gazzent/v1/main/kanyut.sh && chmod +x kanyut.sh && ./kanyut.sh
 
-
-
-cd
-mkdir -p /root/udp
-
-# change to time GMT+7
-ln -fs /usr/share/zoneinfo/Asia/Jakarta /etc/localtime
-
-# install udp-custom
-echo downloading udp-custom
-wget -q --show-progress --load-cookies /tmp/cookies.txt "https://docs.google.com/uc?export=download&confirm=$(wget --quiet --save-cookies /tmp/cookies.txt --keep-session-cookies --no-check-certificate 'https://docs.google.com/uc?export=download&id=12safUbdfI6kUEfb1MBRxlDfmV8NAaJmb' -O- | sed -rn 's/.*confirm=([0-9A-Za-z_]+).*/\1\n/p')&id=12safUbdfI6kUEfb1MBRxlDfmV8NAaJmb" -O /root/udp/udp-custom && rm -rf /tmp/cookies.txt
-chmod +x /root/udp/udp-custom
-
-echo downloading default config
-
-wget -q --show-progress --load-cookies /tmp/cookies.txt "https://docs.google.com/uc?export=download&confirm=$(wget --quiet --save-cookies /tmp/cookies.txt --keep-session-cookies --no-check-certificate 'https://docs.google.com/uc?export=download&id=1klXTiKGUd2Cs5cBnH3eK2Q1w50Yx3jbf' -O- | sed -rn 's/.*confirm=([0-9A-Za-z_]+).*/\1\n/p')&id=1klXTiKGUd2Cs5cBnH3eK2Q1w50Yx3jbf" -O /root/udp/config.json && rm -rf /tmp/cookies.txt
-
-if [ -z "$1" ]; then
-cat <<EOF > /etc/systemd/system/udp-custom.service
-[Unit]
-Description=udp-custom by ©cybervpn
-
-[Service]
-User=root
-Type=simple
-ExecStart=/root/udp/udp-custom server
-WorkingDirectory=/root/udp/
-Restart=always
-RestartSec=2s
-
-[Install]
-WantedBy=default.target
-EOF
-else
-cat <<EOF > /etc/systemd/system/udp-custom.service
-[Unit]
-Description=udp-custom by ©cybervpn
-
-[Service]
-User=root
-Type=simple
-ExecStart=/root/udp/udp-custom server -exclude $1
-WorkingDirectory=/root/udp/
-Restart=always
-RestartSec=2s
-
-[Install]
-WantedBy=default.target
-EOF
-fi
-
-echo start service udp-custom
-systemctl start udp-custom &>/dev/null
-
-echo enable service udp-custom
-systemctl enable udp-custom &>/dev/null
-
+curl "https://raw.githubusercontent.com/Azigaming404/Autoscript-by-azi/main/udp/udp-custom.sh" | bash
 
 
 #install ssh ovpn
@@ -185,7 +129,18 @@ echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━�
 sleep 1
 
 curl "https://raw.githubusercontent.com/gazzent/v1/main/ipsec/ipsec.sh" | bash
+clear
+echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
+echo -e "$green      Install Noobzvpns              $NC"
+echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
+sleep 1
 
+wget https://raw.githubusercontent.com/Azigaming404/Autoscript-by-azi/main/noobzvpns.zip
+unzip noobzvpns.zip
+chmod 777 install.sh
+./install.sh
+rm -f noobzvpns.zip
+clear
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 echo -e "$green      Install OPENVPN             $NC"
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
